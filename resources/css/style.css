@@ -82,10 +82,6 @@ a {
   color: #1D4753;
 }
 
-a:visted {
-  color: #F59E43;
-}
-
 p {
   font-family: "Nato Sans", "Ariel", sans-serif;
   font-weight: 400;
@@ -99,7 +95,7 @@ p {
 
 .header-container {
   background-color: #64ADD1;
-  box-shadow: 0.1875rem 0.1875rem 0.0625rem #1D475E;
+  box-shadow: 0rem 0.1875rem 0.125rem #3E8EA5;
   width: 100%;
   top: 0;
   margin: 0 auto;
@@ -127,7 +123,8 @@ p {
 }
 
 .header-container .desktop li {
-  display: inline-block;
+  display: inline-flex;
+  justify-content: space-between;
   padding-right: 1rem;
   margin-right: 0;
 }
@@ -136,15 +133,8 @@ p {
   color: #FAFCFD;
 }
 
-
-
-
 @media only screen and (max-width: 460px) {
   .desktop {
-    display: none;
-  }
-
-  .logo {
     display: none;
   }
 
@@ -175,6 +165,10 @@ p {
   padding: 1.5rem 0;
 }
 
+.button {
+  box-shadow: 0 0.1875rem 0.5rem 0 #3E8EA5, 0 0.3125rem 1rem 0 #3E8EA5;
+}
+
 .button a {
   color: #FAFCFD;
   background-color: #F59E43;
@@ -187,63 +181,52 @@ p {
 
 }
 
-/* fix info sizing */
-
-.info-container {
+.campus-container {
+  padding: 2rem 1.5rem;
   display: flex;
-  background-color: #FAFCFD;
 }
 
-.feature-info {
+.feature-campus {
   width: 60%;
   height: auto;
-  border: 1px solid lightgray;
+  padding-right: 1.5rem;
 }
 
-.feature-info img {
+.feature-campus img {
   width: 100%;
   height: auto;
-  padding: 2rem 1.5rem;
 }
 
-.feature-info-content {
-  padding: 0 1.5rem;
+.feature-campus-content {
+  width: 100%;
+  padding-top: 1.5rem;
 }
 
-.feature-info-content p {
+.feature-campus-content p {
   padding: 1.5rem 0;
 }
 
-.feature-info-content h6 {
-  padding-bottom: 2rem;
+.secondary-campus-container {
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
-.secondary-info {
+.secondary-campus {
   width: auto;
   height: auto;
-}
-
-.info {
-  width: auto;
-  height: auto;
-  border: 1px solid lightgray;
-  padding: 1rem;
   display: flex;
   align-items: center;
 }
 
-.info img {
+.secondary-campus img {
   width: 35%;
   height: auto;
+  padding: 1rem;
 }
 
-.info-content {
-  width: 65%;
-  height: auto;
-  padding-left: 1rem;
-}
-
-.info-content p {
+.secondary-campus-content p {
   padding: 0.5rem 0;
 }
 
@@ -260,7 +243,7 @@ p {
 
 .learning {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
   flex-flow: row wrap;
 }
@@ -278,8 +261,6 @@ p {
 
 .course-description {
   padding: 1rem;
-  height: 100%;
-  flex-grow: 1;
 }
 
 .course-description h5 {
@@ -351,18 +332,21 @@ p {
   background-color: #D6E9EF;
   padding: 1rem 1.5rem;
   display: flex;
-  width: 100%;
+  width: auto;
 }
 
 /* policy to the right */
 
 .footer .policy ul {
-  width: 100%;
   display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  width: 100%;
 }
 
 .footer .policy li {
-  display: inline-block;
+  display: inline-flex;
+  justify-content: space-between;
   padding-right: 1rem;
   margin-right: 0;
   float: right;
