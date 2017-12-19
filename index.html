@@ -2,21 +2,22 @@
 <html>
   <head>
     <title>Colmar Academy</title>
-    <link href="./resources/css/reset.css" type="text/css" rel="stylesheet"/>
-    <link href="./resources/css/style.css" type="text/css" rel="stylesheet"/>
+    <link href="./resources/css/reset.css" type="text/css" rel="stylesheet">
+    <link href="./resources/css/style.css" type="text/css" rel="stylesheet">
+    <link rel="icon" href="./resources/images/favicon.ico" type="image/x-icon">
   </head>
   <body>
 
     <!-- Header Section -->
-    <div class="header-container">
-      <div class="logo">
+    <header>
+      <div id="desktop" class="logo">
         <img src="./resources/images/ic-logo.svg">
         <h3><span>colmar</span>academy</h3>
       </div>
 
       <!-- Header Nav Desktop -->
-      <nav class="desktop">
-        <ul>
+      <nav id="desktop">
+        <ul class="desktop-nav">
           <li><a href="#">On campus</a></li>
           <li><a href="#">Online</a></li>
           <li><a href="#">For companies</a></li>
@@ -25,13 +26,23 @@
       </nav>
 
       <!-- Header Nav Molible -->
-      <nav class="mobile">
-        <a href="#"><img src="./resources/images/ic-logo.svg"></a>
-        <a href="#"><img src="./resources/images/ic-on-campus.svg"></a>
-        <a href="#"><img src="./resources/images/ic-online.svg"></a>
-        <a href="#"><img src="./resources/images/ic-login.svg"></a>
+      <nav id="mobile">
+        <ul>
+          <li><a href="#">
+            <img src="./resources/images/ic-logo.svg"></a>
+          </li>
+          <li><a href="#">
+            <img src="./resources/images/ic-on-campus.svg"></a>
+          </li>
+          <li><a href="#">
+            <img src="./resources/images/ic-online.svg"></a>
+          </li>
+          <li><a href="#">
+            <img src="./resources/images/ic-login.svg"></a>
+          </li>
+        </ul>
       </nav>
-    </div>
+    </header>
 
     <!-- Banner Section -->
     <div class="banner-container">
@@ -39,22 +50,22 @@
       <div class="banner-info">
         <h1>Learn something new everyday</h1>
         <h4>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</h4>
-        <div class="button">
+        <button>
           <a href="#">Start here</a>
-        </div>
+        </button>
       </div>
     </div>
 
     <!-- Campus Section -->
     <div class="campus-container">
-      <div class="feature-campus desktop">
+      <div id="desktop" class="feature-campus">
         <img src="./resources/images/information-main.jpg">
-        <div class="feature-campus-content desktop">
+        <div class="feature-campus-content">
           <h2>It doesn't hurt to keep practicing</h2>
           <p>"Curabitur vitae libero in ipsum porttitor consequat. Aliquam et
-            commodo lectus, nec consequat neque. Sed non accumsan urna. Phasellus
-            sed consequat ex. Etiam eget magna laoreet, efficitur dolor
-            consequat, tristique ligula."</p>
+            commodo lectus, nec consequat neque. Sed non accumsan urna.
+            Phasellus sed consequat ex. Etiam eget magna laoreet, efficitur
+            dolor consequat, tristique ligula."</p>
           <h6>Emmanuel, Sr Strategist at Hiring.com</h6>
         </div>
       </div>
@@ -64,8 +75,10 @@
 
         <!-- Orientation info -->
         <div class="secondary-campus">
-          <img class="desktop" src="./resources/images/information-orientation.jpg">
-          <img class="mobile" src="./resources/images/information-orientation-mobile.jpg">
+          <img id="desktop"
+            src="./resources/images/information-orientation.jpg">
+          <img id="mobile"
+            src="./resources/images/information-orientation-mobile.jpg">
           <div class="secondary-campus-content">
             <h5>Orientation date</h5>
             <p>Tue 10/11 & Wed 10/12: 8am-3pm</p>
@@ -75,8 +88,9 @@
 
         <!-- Campus info -->
         <div class="secondary-campus">
-          <img class="desktop" src="./resources/images/information-campus.jpg">
-          <img class="mobile" src="./resources/images/information-campus-mobile.jpg">
+          <img id="desktop" src="./resources/images/information-campus.jpg">
+          <img id="mobile"
+            src="./resources/images/information-campus-mobile.jpg">
           <div class="secondary-campus-content">
             <h5>Our campus</h5>
             <p>Find which campus is close by you</p>
@@ -86,11 +100,14 @@
 
         <!-- Guest lecture info -->
         <div class="secondary-campus">
-          <img class="desktop" src="./resources/images/information-guest-lecture.jpg">
-          <img class="mobile" src="./resources/images/information-guest-lecture-mobile.jpg">
+          <img id="desktop"
+            src="./resources/images/information-guest-lecture.jpg">
+          <img id="mobile"
+            src="./resources/images/information-guest-lecture-mobile.jpg">
           <div class="secondary-campus-content">
             <h5>Our guest lecture</h5>
-            <p>Join a keynote with Oliver Sack about music in medical treament</p>
+            <p>Join a keynote with Oliver Sack about music in medical treament
+            </p>
             <a href="#">Read more</a>
           </div>
         </div>
@@ -105,7 +122,7 @@
       <h2>Start Learning</h2>
 
       <!-- Courses Desktop -->
-      <div class="learning desktop">
+      <div id="desktop" class="learning">
 
         <!-- Software engineering -->
         <div class="course">
@@ -170,19 +187,15 @@
       </div>
 
       <!-- Courses Mobile -->
-      <div class="mobile">
-        <div class="course-button">
-          <nav>
-            <ul>
-              <li><a href="#">Software engineering</a></li>
-              <li><a href="#">Computer art</a></li>
-              <li><a href="#">Design</a></li>
-              <li><a href="#">Data</a></li>
-              <li><a href="#">Business</a></li>
-              <li><a href="#">Marketing</a></li>
-            </ul>
-          </nav>
-        </div>
+      <div id="mobile">
+        <ul class="course-buttons">
+          <li><a href="#">Software engineering</a></li>
+          <li><a href="#">Computer art</a></li>
+          <li><a href="#">Design</a></li>
+          <li><a href="#">Data</a></li>
+          <li><a href="#">Business</a></li>
+          <li><a href="#">Marketing</a></li>
+        </ul>
       </div>
     </div>
 
@@ -197,7 +210,7 @@
           <video src="./resources/videos/thesis.mp4" controls>
             Video not supported
           </video>
-          <div class="desktop">
+          <div id="desktop" class="feature-thesis-content">
             <h5>Reimagine urban</h5>
             <p>"Curabitur vitae libero in ipsum porttitor consequat. Aliquam et
               commodo lectus, nec consequat neque. Sed non accumsan urna.
@@ -207,42 +220,37 @@
         </div>
 
         <!-- Secondary Thesis desktop only -->
-        <div class="desktop">
-          <div class="secondary-thesis-container">
-            <!-- Fisma Thesis -->
-            <div class="secondary-thesis">
-              <img src="./resources/images/thesis-fisma.jpg">
-              <div class="secondary-thesis-content">
-                <h5>Fisma: Design and Prototype</h5>
-                <p>Designer showcase of new prototype product</p>
-              </div>
+        <div id="desktop" class="secondary-thesis-container">
+          <!-- Fisma Thesis -->
+          <div class="secondary-thesis">
+            <img src="./resources/images/thesis-fisma.jpg">
+            <div class="secondary-thesis-content">
+              <h5>Fisma: Design and Prototype</h5>
+              <p>Designer showcase of new prototype product</p>
             </div>
+          </div>
 
-            <!-- Now and Then Thesis -->
-            <div class="secondary-thesis">
-              <img src="./resources/images/thesis-now-and-then.jpg">
-              <div class="secondary-thesis-content">
-                <h5>Now and then</h5>
-                <p>Research study about New York</p>
-              </div>
+          <!-- Now and Then Thesis -->
+          <div class="secondary-thesis">
+            <img src="./resources/images/thesis-now-and-then.jpg">
+            <div class="secondary-thesis-content">
+              <h5>Now and then</h5>
+              <p>Research study about New York</p>
             </div>
           </div>
         </div>
       </div>
     </div>
 
-
-
     <!-- Footer -->
-    <div class="footer">
-
+    <footer>
       <!-- Copyright -->
       <div class="copyright">
         <p>© 2016 Colmar Academy. All rights reserved</p>
       </div>
 
       <!-- Policy -->
-      <div class="policy desktop">
+      <div id="desktop" class="policy">
         <nav>
           <ul>
             <li><a href="#">Terms</a></li>
@@ -250,9 +258,7 @@
           </ul>
         </nav>
       </div>
-    </div>
-
-
+    </footer>
 
   </body>
 </html>
