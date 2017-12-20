@@ -97,59 +97,58 @@ p {
   color: #1D4753;
 }
 
-.mobile {
+#mobile {
   display: none;
 }
 
-/* Header */
-.header-container {
+/* Header Section */
+header {
   background-color: #64ADD1;
   box-shadow: 0rem 0.1875rem 0.125rem #3E8EA5;
   width: 100%;
   top: 0;
   margin: 0 auto;
-  padding: 1rem 1.5rem;
-  display: flex;
   position: fixed;
+
 }
 
-.logo {
+.desktop-nav {
+  height: 4rem;
+  padding: 0 1.5rem;
   display: flex;
   align-items: center;
-  width: 100%;
+  justify-content: flex-end;
 }
 
-.logo span {
+.desktop-nav li:first-child {
+  font-family: "Nato Sans", "Ariel", sans-serif;
+  font-size: 1.625rem;
+  color: #FAFCFD;
+  text-transform: uppercase;
+  margin-right: auto;
+}
+
+.desktop-nav span {
   font-family: "Arvo", "Times New Roman", serif;
   font-weight: bold;
   color: #000;
 }
 
-.header-container .desktop {
+.desktop-nav li {
   display: flex;
-  flex-flow: row nowrap;
-  align-items: center;
-  justify-content: flex-end;
-  width: 100%;
 }
 
-.header-container .desktop li {
-  display: inline-flex;
-  justify-content: space-between;
-  padding-left: 1rem;
-  margin-right: 0;
-}
-
-.header-container .desktop a {
+.desktop-nav a {
   color: #FAFCFD;
+  padding-left: 1rem;
 }
 
-.header-container .desktop a:hover {
+.desktop-nav a:hover {
   color: #F59E43;
   transition: color 0.5s ease-out;
 }
 
-/* Banner */
+/* Banner Section */
 .banner-container {
   background-color: #D6E9EF;
   margin-top: 4rem;
@@ -158,14 +157,14 @@ p {
 }
 
 .banner-container img {
-  padding: 2rem 1.5rem;
   width: 60%;
   height: auto;
+  padding: 2rem 1.5rem;
 }
 
 .banner-info {
-  padding-right: 1.5rem;
   width: 30%;
+  padding-right: 1.5rem;
 }
 
 .banner-info h4 {
@@ -174,14 +173,15 @@ p {
 
 .button {
   box-shadow: 0 0.1875rem 0.5rem 0 #3E8EA5, 0 0.3125rem 1rem 0 #3E8EA5;
+  background-color: #F59E43;
+  width: 100%;
+  display: flex;
+  justify-content: center;
 }
 
 .button a {
   color: #FAFCFD;
-  background-color: #F59E43;
   padding: 0.5rem;
-  display: flex;
-  justify-content: center;
 }
 
 .button a:hover {
@@ -191,14 +191,14 @@ p {
 
 /* Campus Info */
 .campus-container {
-  padding: 2rem 1.5rem;
+  background-color: #FAFCFD;
   display: flex;
 }
 
 .feature-campus {
   width: 60%;
   height: auto;
-  padding-right: 1.5rem;
+  padding: 2rem 1.5rem;
 }
 
 .feature-campus img {
@@ -217,14 +217,13 @@ p {
 
 .secondary-campus-container {
   width: 40%;
+  padding: 1rem 0;
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
 .secondary-campus {
-  width: auto;
-  height: auto;
   display: flex;
   align-items: center;
 }
@@ -241,8 +240,8 @@ p {
 
 /* Start Learning */
 .learning-container {
-  padding: 2rem 4.5rem;
   background-color: #D6E9EF;
+  padding: 2rem 4.5rem;
 }
 
 .learning-container h2 {
@@ -253,9 +252,9 @@ p {
 
 .learning {
   display: flex;
+  flex-flow: row wrap;
   justify-content: space-between;
   align-items: center;
-  flex-flow: row wrap;
 }
 
 .course {
@@ -288,43 +287,46 @@ p {
 
 /* Thesis */
 .thesis {
-  padding: 2rem 0;
   background-color: #FAFCFD;
+  width: 100%;
+  padding: 1.5rem 0;
 }
 
 .thesis h2 {
+  padding: 0.5rem 0;
   text-align: center;
-  padding-bottom: 0.5rem;
 }
 
 .thesis-container {
   display: flex;
-  padding: 1.5rem;
 }
 
 .feature-thesis {
   width: 60%;
   height: auto;
-  padding-right: 1.5rem;
 }
 
 .feature-thesis video {
   width: 100%;
   height: auto;
+  padding: 1.5rem;
 }
 
-.feature-thesis .desktop {
+.feature-thesis-content {
   width: 100%;
-  padding-top: 1.5rem;
+  padding: 0 1.5rem;
 }
 
-.feature-thesis .desktop p {
-  padding-top: 0.5rem;
+.feature-thesis-content p {
+  padding: 0.5rem 0;
+}
+
+.secondary-thesis-container {
+  width: 40%;
+  padding: 1.5rem;
 }
 
 .secondary-thesis {
-  width: auto;
-  height: auto;
   display: flex;
   align-items: center;
 }
@@ -335,66 +337,60 @@ p {
   padding: 1rem;
 }
 
+.secondary-thesis-content {
+  width: 65%;
+}
+
 .secondary-thesis-content p {
   padding: 0.5rem 0;
 }
 
-/* Footer */
-.footer {
+/* Footer Section */
+footer {
   background-color: #D6E9EF;
+  width: auto;
   padding: 1rem 1.5rem;
   display: flex;
-  width: auto;
 }
 
-.footer .copyright {
-  display: flex;
+.copyright {
   width: 100%;
+  display: flex;
 }
 
-.footer .policy {
+.policy {
+  width: 100%;
   display: flex;
   flex-flow: row nowrap;
   justify-content: flex-end;
-  width: 100%;
 }
 
-.footer .policy li {
-  display: inline-flex;
-  justify-content: space-between;
+.policy li {
   padding-left: 1rem;
   margin-right: 0;
-}
-
-@media only screen and (max-width: 768px) {
-  .header-container .desktop {
-    display: none;
-  }
-
-  .header-container .mobile {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-  }
+  display: inline-flex;
+  justify-content: space-between;
 }
 
 @media only screen and (max-width: 480px) {
-  .desktop {
+  #desktop {
     display: none;
   }
 
-  .mobile {
+  #mobile {
     display: block;
   }
 
-  .header-container .logo {
-    display: none;
+  .mobile-nav {
+    width: 100%;
+    height: 4rem;
+    display: flex;
+    justify-content: space-around;
   }
 
-  .header-container .mobile {
-    width: 100%;
+  .mobile-nav li {
     display: flex;
-    justify-content: space-between;
+    align-items: center;
   }
 
   .banner-container {
@@ -412,67 +408,69 @@ p {
     padding: 2rem 1rem;
   }
 
-  .button {
-    margin: 1rem;
-  }
-
   .secondary-campus-container {
-    width: auto;
-    display: flex;
+    width: 100%;
   }
 
   .secondary-campus {
-    width: auto;
+    padding: 1rem;
     display: flex;
     flex-flow: column;
-    align-items: flex-start;
   }
 
-  .secondary-campus .mobile {
-    width: 100%;
-  }
-
-  .secondary-campus .mobile img {
+  .secondary-campus img {
     width: 100%;
     height: auto;
+    padding: 1rem;
   }
 
   .secondary-campus-content {
-    width: auto;
-    padding: 1rem;
+    width: 100%;
+    padding: 1rem 2rem;
+  }
+
+  .secondary-campus-content a {
+    padding: 1rem 0;
   }
 
   .learning-container {
     width: auto;
-    padding: 2rem 1rem;
+    padding: 2rem 0;
   }
 
-  .course-button a {
+  .learning-container h2 {
+    padding-bottom: 0.75rem;
+  }
+
+  .course-buttons a {
     color: #FAFCFD;
     background-color: #64ADD1;
     text-shadow: 0rem 0.0625rem 0.0625rem #1D4753;
     padding: 1rem;
     padding-bottom: 1.5rem;
-    margin: 0.25rem 0;
+    margin: 0.25rem 1rem;
     border-radius: 0.5rem;
     display: flex;
   }
 
-  .course-button a:hover {
+  .course-buttons a:hover {
     color: #F59E43;
     background-color: #3E8EA5;
   }
 
-  .thesis-container {
+  .thesis h2 {
+    padding: 1rem 0;
+  }
+
+  .feature-thesis {
     width: 100%;
+    height: 100%;
+    overflow: hidden;
   }
 
   .feature-thesis video {
-    width: 100%;
-    height: auto;
-  }
-
-  .footer .desktop {
-    display: none;
+    min-width: 100%;
+    min-height: 100%;
+    padding: 0;
   }
 }
