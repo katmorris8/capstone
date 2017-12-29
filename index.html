@@ -2,6 +2,7 @@
 <html>
   <head>
     <title>Colmar Academy</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="./resources/css/reset.css" type="text/css" rel="stylesheet">
     <link href="./resources/css/style.css" type="text/css" rel="stylesheet">
     <link rel="icon" href="./resources/images/favicon.ico" type="image/x-icon">
@@ -12,10 +13,10 @@
     <header>
 
       <!-- Header Nav Desktop -->
-      <nav id="desktop">
-        <ul class="desktop-nav" role="presentation">
-          <li><img src="./resources/images/ic-logo.svg" alt="logo">
-            <span>Colmar</span>Academy</li>
+      <nav>
+        <ul class="desktop desktop-nav" role="presentation">
+          <li class="logo"><a href="#"><img src="./resources/images/ic-logo.svg"
+             alt="logo"><h3><span>Colmar</span>Academy</h3></a></li>
           <li><a href="#">On campus</a></li>
           <li><a href="#">Online</a></li>
           <li><a href="#">For companies</a></li>
@@ -24,8 +25,8 @@
       </nav>
 
       <!-- Header Nav Mobile -->
-      <nav id="mobile">
-        <ul class="mobile-nav" role="presentation">
+      <nav>
+        <ul class="mobile mobile-nav" role="presentation">
           <li><a href="#">
             <img src="./resources/images/ic-logo.svg" alt="logo"></a>
           </li>
@@ -57,7 +58,7 @@
 
     <!-- Campus Section -->
     <div class="campus-container">
-      <div id="desktop" class="feature-campus">
+      <div class="desktop feature-campus">
         <img src="./resources/images/information-main.jpg"
           alt="man reading outside">
         <div class="feature-campus-content">
@@ -75,10 +76,10 @@
 
         <!-- Orientation info -->
         <div class="secondary-campus">
-          <img id="desktop"
+          <img class="desktop"
             src="./resources/images/information-orientation.jpg"
             alt="students walking on path">
-          <img id="mobile"
+          <img class="mobile"
             src="./resources/images/information-orientation-mobile.jpg"
             alt="students walking on path">
           <div class="secondary-campus-content">
@@ -90,9 +91,9 @@
 
         <!-- Campus info -->
         <div class="secondary-campus">
-          <img id="desktop" src="./resources/images/information-campus.jpg"
+          <img class="desktop" src="./resources/images/information-campus.jpg"
             alt="classroom">
-          <img id="mobile"
+          <img class="mobile"
             src="./resources/images/information-campus-mobile.jpg"
             alt="classroom">
           <div class="secondary-campus-content">
@@ -104,10 +105,10 @@
 
         <!-- Guest lecture info -->
         <div class="secondary-campus">
-          <img id="desktop"
+          <img class="desktop"
             src="./resources/images/information-guest-lecture.jpg"
             alt="guest speaker Oliver Sack">
-          <img id="mobile"
+          <img class="mobile"
             src="./resources/images/information-guest-lecture-mobile.jpg"
             alt="guest speaker Oliver Sack">
           <div class="secondary-campus-content">
@@ -128,7 +129,7 @@
       <h2>Start Learning</h2>
 
       <!-- Courses Desktop -->
-      <div id="desktop" class="learning">
+      <div class="desktop learning">
 
         <!-- Software engineering -->
         <div class="course">
@@ -197,7 +198,7 @@
       </div>
 
       <!-- Courses Mobile -->
-      <div id="mobile">
+      <div class="mobile">
         <ul class="course-buttons" role="presentation">
           <li><a href="#">Software engineering</a></li>
           <li><a href="#">Computer art</a></li>
@@ -220,7 +221,7 @@
           <video src="./resources/videos/thesis.mp4" controls>
             Video not supported
           </video>
-          <div id="desktop" class="feature-thesis-content">
+          <div class="desktop feature-thesis-content">
             <h5>Reimagine urban</h5>
             <p>"Curabitur vitae libero in ipsum porttitor consequat. Aliquam et
               commodo lectus, nec consequat neque. Sed non accumsan urna.
@@ -230,7 +231,7 @@
         </div>
 
         <!-- Secondary Thesis desktop only -->
-        <div id="desktop" class="secondary-thesis-container"
+        <div class="desktop secondary-thesis-container"
           role="complementary">
 
           <!-- Fisma Thesis -->
@@ -264,7 +265,7 @@
       </div>
 
       <!-- Policy -->
-      <div id="desktop" class="policy">
+      <div class="desktop policy">
         <nav>
           <ul role="presentation">
             <li><a href="#">Terms</a></li>

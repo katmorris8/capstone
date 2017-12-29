@@ -97,7 +97,7 @@ p {
   color: #1D4753;
 }
 
-#mobile {
+.mobile {
   display: none;
 }
 
@@ -126,9 +126,15 @@ header {
   color: #FAFCFD;
   text-transform: uppercase;
   margin-right: auto;
+  align-items: center;
+}
+.logo a {
+  display: flex;
+  align-items: center;
+  flex-flow: row;
 }
 
-.desktop-nav span {
+.logo span {
   font-family: "Arvo", "Times New Roman", serif;
   font-weight: bold;
   color: #000;
@@ -374,11 +380,11 @@ footer {
 }
 
 @media only screen and (max-width: 480px) {
-  #desktop {
+  .desktop {
     display: none;
   }
 
-  #mobile {
+  .mobile {
     display: block;
   }
 
